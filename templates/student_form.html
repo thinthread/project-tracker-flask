@@ -6,16 +6,16 @@
 <body>
     <h1>Please add a student:</h1>
     <form action="/student-add" method="POST">
-        First name: <input type='text' name='first' value='first'>
+        First name: <input type='text' name='first' value={{first}}>
         <br>
         <br>
-        Last name: <input type='text' name='name' value='last'>
+        Last name: <input type='text' name='last' value={{last}}>
         <br>
         <br>
-        Github: <input type='text' name='github' value='github'>
+        Github: <input type='text' name='github' value={{github}}>
         <br>
         <br>
-        <button type='submit' value='Submit'></button>
+        <button type='submit' value='Submit'>Submit</button>
     </form>
 </body>
 </html>

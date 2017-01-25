@@ -4,8 +4,16 @@
     <title>Student Info</title>
 </head>
 <body>
-<h1>{{ first }} {{ last }}</h1>
+    <h1>{{ first }} {{ last }}</h1>
 
-<p>GitHub Account: {{ github }}</p>
+    <p>GitHub Account: {{ github }}</p><br>
+
+    <ul>
+
+        {% for row in rows %}
+              <li> {{ row[1] }} {{row[0]}} </li>
+        {% endfor %}
+
+    </ul>
 </body>
 </html>
